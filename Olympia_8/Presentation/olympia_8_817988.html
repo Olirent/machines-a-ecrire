@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de la machine à écrire Olympia 8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <img src="images/logo.png" alt="Logo Olirent" class="logo">
+    <div class="article">
+        <h1 class="titre">Machine à écrire mécanique
+        </h1>
+        <h1 class="titre">Olympia 8 de 1948 n° 817988
+        </h1>
+        <br>
+        <img src="images/olympia-8-vue-avant.jpg"
+             alt="Machine à écrire Olympia 8"
+             class="photo">
+        <figcaption class="legende">
+        Vue avant Olympia 8
+        </figcaption>
+        <h2 class="sous-titre">Présentation</h2>
+        <p class="texte">
+        La machine est présentée telle que reçue, avant tout nettoyage, démontage.
+        </p>
+        <h3 class="paragraphe">Caractéristiques</h3>
+        <p class="texte">
+        Elle est de marque <b>Olympia</b>, modèle <b>8</b>, et a été fabriquée en <b>1948</b> à Erfurt, une ville située en Allemagne.<br>
+        Sa date de fabrication n'est pas inscrite, mais peut être connue grace à son numéro de série et le site <a href="https://typewriterdatabase.com">typewriterdatabase.com</a><br>
+        </p>
+        <br>
+    </div>
+    <div class="galerie">
+        <div class="bloc-info">
+            <div class="cadre-photo">
+                <img src="images/olympia-8-numero-serie.png"
+                alt="Numéro de série machine à écrire Olympia 8"
+                class="photo zoomable"
+                style="--zoom:2; --origine:75% 0%;">
+            </div>        
+            <figcaption class="legende">
+                N° de série Olympia 8
+                </figcaption>
+            <p class="texte">
+                Le numéro de série est gravé en haut à droite du chassis, sur l'arrière.
+            </p>
+        </div>
+        <div class="bloc-info">
+            <img src="images/olympia-8-plaque-fournisseur.png" alt="Plaque fournisseur" class="photo">
+                <figcaption class="legende">
+                Plaque fournisseur Olympia 8
+                </figcaption>
+            <p class="texte">
+                Comme c'est parfois le cas, le fournisseur/distributeur a riveté sa plaque sur le panneau arrière.
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="article">
+        <p class="texte">
+            Cette machine pèse 20 kg et est assez imposante, avec son chariot de 18 pouces et sa largeur totale de 72 cm.
+        </p>
+    </div>
+    <div class="bloc-photo-texte">
+        <div class="colonne-photo">
+            <div class="video-thumbnail">
+                <img src="images/image_video.jpg"
+                    alt="Olympia 8 en fonctionnement"
+                    class="photo">
+                <a href="https://www.youtube.com/watch?v=3BwARdr9BTo"
+                target="_blank"
+                class="play-link">
+                    <img src="images/youtube-play.png"
+                        alt="Lire la vidéo"
+                        class="play-button">
+                </a>
+            </div>
+        </div>
+        <div class="colonne-texte">
+            <p class="texte">His cognitis Gallus ut serpens adpetitus telo vel saxo iamque spes extremas opperiens 
+                et succurrens saluti suae quavis ratione colligi omnes iussit armatos et cum starent attoniti, 
+                districta dentium acie stridens adeste inquit viri fortes mihi periclitanti vobiscum.
+            </p>
+            <p class="texte">Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post 
+                haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium 
+                primatibus nec plebeiis.
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+document.querySelectorAll('.zoomable').forEach(img => {
+    img.addEventListener('click', function () {
+        this.classList.toggle('zoom');
+    });
+});
+</script>
+</body>
+</html>
